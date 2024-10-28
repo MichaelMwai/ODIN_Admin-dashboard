@@ -31,13 +31,14 @@ ul {
 }
 
 .container {
-  background-color: beige;
+  background-color: lightgray;
 }
 
 .container-header {
   display: flex;
   flex-direction: column;
   padding: 10px 20px;
+  background-color: white;
   box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.44);
 }
 
