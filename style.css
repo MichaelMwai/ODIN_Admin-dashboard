@@ -1,8 +1,10 @@
 body {
   margin: 0;
   display: grid;
-  background-color: red;
+  height: 100vh;
   grid-template-columns: 1fr 4fr;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 .side-panel {
@@ -29,13 +31,14 @@ ul {
 }
 
 .container {
-  background-color: white;
+  background-color: beige;
 }
 
 .container-header {
   display: flex;
   flex-direction: column;
-  padding: 10px 30px;
+  padding: 10px 20px;
+  box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.44);
 }
 
 .container-header-top {
@@ -43,6 +46,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
 }
 
 .container-header-bottom {
@@ -50,11 +54,26 @@ ul {
   justify-content: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 30px;
+}
+
+.user,
+.right,
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.right img {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
 }
 
 .container-content {
   display: flex;
-  background-color: orange;
+  padding: 0;
 }
 
 .projects {
@@ -64,7 +83,6 @@ ul {
   grid-template-rows: 1fr 1fr 1fr;
   padding: 20px;
   gap: 20px;
-  background-color: grey;
 }
 
 .project-card {
@@ -72,6 +90,7 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
+  box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.44);
   border-radius: 20px;
   padding: 30px;
   border-left: 6px solid red;
@@ -85,38 +104,69 @@ ul {
   display: flex;
   width: 30%;
   flex-direction: column;
-  background-color: yellow;
   gap: 20px;
-  padding: 20px 0;
-  justify-content: space-between;
+  padding: 20px 20px 20px 0;
 }
 .announcements-card {
-  background-color: aquamarine;
+  background-color: white;
+  box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.44);
   border-radius: 20px;
   padding: 20px;
 }
 
 .trending-card {
   background-color: white;
+  box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.44);
   border-radius: 20px;
   padding: 20px;
 }
 
-.trending-card div {
+.trending-item {
   display: flex;
+  align-items: center;
 }
 
 .details {
   display: flex;
   flex-direction: column;
-  height: ;
+  padding-left: 20px;
 }
 
 svg {
   width: 25px;
 }
 
+img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
 .side-panel svg {
   fill: white;
   margin-right: 10px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  width: 100px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkblue;
+}
+
+input {
+  height: 30px;
+  border-radius: 10px;
+  padding: 0 20px;
+  width: 500px;
 }
