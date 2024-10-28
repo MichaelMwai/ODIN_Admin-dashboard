@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  display: grid;
+  background-color: red;
+  grid-template-columns: 1fr 4fr;
+}
+
+.side-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+}
+
+.side-panel h2 {
+  margin-bottom: 60px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-bottom: 60px;
+}
+
+.container {
+  background-color: white;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.container-header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-header-bottom {
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-content {
+  display: flex;
+  background-color: orange;
+}
+
+.projects {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+  background-color: grey;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  border-left: 6px solid red;
+}
+
+.icons {
+  text-align: right;
+}
+
+.news {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  background-color: yellow;
+  gap: 20px;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.announcements-card {
+  background-color: aquamarine;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.trending-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.trending-card div {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  height: ;
+}
+
+svg {
+  width: 25px;
+}
+
+.side-panel svg {
+  fill: white;
+  margin-right: 10px;
+}
